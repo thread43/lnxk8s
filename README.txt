@@ -120,3 +120,8 @@ bootstrap.sh
 |   |-- addon/calico/install_calico.sh
 |   `-- addon/cilium/install_cilium.sh
 `-- setup.sh
+
+
+
+-- demo
+https://www.bilibili.com/video/BV1fwCmBBEmZ/
