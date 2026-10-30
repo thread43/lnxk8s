@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nanoserver-deployment
+  labels:
+    app: nanoserver
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nanoserver
+  template:
+    metadata:
+      labels:
+        app: nanoserver
+    spec:
+      containers:
+      - name: nanoserver-container
+        image: mcr.microsoft.com/windows/nanoserver:ltsc2022
+        imagePullPolicy: IfNotPresent
+        command: ["cmd", "/c", "ping -t localhost"]
+      nodeSelector:
+        "kubernetes.io/os": "windows"
