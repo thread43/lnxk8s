@@ -116,8 +116,7 @@ ETCD_OPTS=" \\
   --cert-file=/opt/etcd/server.pem \\
   --client-cert-auth=true \\
   --data-dir=/var/lib/etcd \\
-  --experimental-initial-corrupt-check=true \\
-  --experimental-watch-progress-notify-interval=5s \\
+  --feature-gates=InitialCorruptCheck=true \\
   --initial-advertise-peer-urls=https://${ETCD_IP}:2380 \\
   --initial-cluster=${INITIAL_CLUSTER} \\
   --key-file=/opt/etcd/server-key.pem \\
@@ -131,6 +130,7 @@ ETCD_OPTS=" \\
   --peer-trusted-ca-file=/opt/etcd/ca.pem \\
   --snapshot-count=10000 \\
   --trusted-ca-file=/opt/etcd/ca.pem \\
+  --watch-progress-notify-interval=5s \\
 "
 EOF
 if [ "${OS_ARCH}" = "arm64" ]; then

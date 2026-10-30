@@ -16,7 +16,7 @@ cd artifact/crio
 cat <<EOF >10-crio.conf
 [crio.image]
 signature_policy = "/etc/crio/policy.json"
-pause_image = "registry.aliyuncs.com/google_containers/pause:3.10"
+pause_image = "registry.aliyuncs.com/google_containers/pause:3.10.1"
 
 [crio.runtime]
 default_runtime = "crun"

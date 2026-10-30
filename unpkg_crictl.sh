@@ -16,7 +16,7 @@ cd pkg
 
 [ -d crictl ] && rm -rf crictl
 mkdir -p crictl
-tar xzf crictl-v1.33.0-linux-amd64.tar.gz -C crictl
+tar xzf crictl-v1.37.0-linux-amd64.tar.gz -C crictl
 
 chown -R root:root crictl
 

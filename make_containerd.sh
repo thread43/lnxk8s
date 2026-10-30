@@ -43,7 +43,7 @@ EOF
 ./containerd config default >config.toml
 cp -a config.toml config.toml_bk_raw
 sed -i "s|registry.k8s.io|registry.aliyuncs.com/google_containers|g" config.toml
-sed -i "s|pause:3.8|pause:3.10|g" config.toml
+sed -i "s|pause:3.8|pause:3.10.1|g" config.toml
 sed -i "s|SystemdCgroup = false|SystemdCgroup = true|g" config.toml
 sed -i '/\[plugins."io.containerd.grpc.v1.cri".registry.mirrors\]/a\
         [plugins."io.containerd.grpc.v1.cri".registry.mirrors."docker.io"]\

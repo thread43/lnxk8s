@@ -17,11 +17,11 @@ mkdir -p pkg
 cd pkg
 
 [ "${NETWORK_REGION}" = "us" ] && {
-wget -c "https://github.com/Mirantis/cri-dockerd/releases/download/v0.4.3/cri-dockerd-0.4.3.amd64.tgz" -O cri-dockerd-0.4.3.amd64.tgz
+wget -c "https://github.com/Mirantis/cri-dockerd/releases/download/v0.4.9/cri-dockerd-0.4.9.amd64.tgz" -O cri-dockerd-0.4.9.amd64.tgz
 }
 
 [ "${NETWORK_REGION}" = "cn" ] && {
-wget -c "http://199.115.230.237:12345/kubernetes/pkg/cri-dockerd-0.4.3.amd64.tgz" -O cri-dockerd-0.4.3.amd64.tgz
+wget -c "http://199.115.230.237:12345/kubernetes/pkg/cri-dockerd-0.4.9.amd64.tgz" -O cri-dockerd-0.4.9.amd64.tgz
 }
 
 date

@@ -17,11 +17,11 @@ mkdir -p pkg
 cd pkg
 
 [ "${NETWORK_REGION}" = "us" ] && {
-wget -c "https://github.com/containernetworking/plugins/releases/download/v1.6.0/cni-plugins-linux-amd64-v1.6.0.tgz" -O cni-plugins-linux-amd64-v1.6.0.tgz
+wget -c "https://github.com/containernetworking/plugins/releases/download/v1.7.1/cni-plugins-linux-amd64-v1.7.1.tgz" -O cni-plugins-linux-amd64-v1.7.1.tgz
 }
 
 [ "${NETWORK_REGION}" = "cn" ] && {
-wget -c "http://199.115.230.237:12345/kubernetes/pkg/cni-plugins-linux-amd64-v1.6.0.tgz" -O cni-plugins-linux-amd64-v1.6.0.tgz
+wget -c "http://199.115.230.237:12345/kubernetes/pkg/cni-plugins-linux-amd64-v1.7.1.tgz" -O cni-plugins-linux-amd64-v1.7.1.tgz
 }
 
 date

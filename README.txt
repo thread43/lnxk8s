@@ -16,21 +16,21 @@ bash uninstall.sh
 
 
 -- upstream
-kubernetes     v1.33.13 https://github.com/kubernetes/kubernetes
-etcd           v3.5.24  https://github.com/etcd-io/etcd
-cni-plugins    v1.6.0   https://github.com/containernetworking/plugins
-coredns        v1.12.0  https://github.com/kubernetes/kubernetes/tree/v1.33.13/cluster/addons/dns/coredns
-runc           v1.4.3   https://github.com/opencontainers/runc
-containerd     v1.7.33  https://github.com/containerd/containerd
-crictl         v1.33.0  https://github.com/kubernetes-sigs/cri-tools
-docker         v29.6.0  https://github.com/moby/moby
-cri-dockerd    v0.4.3   https://github.com/Mirantis/cri-dockerd
-crio           v1.31.1  https://github.com/cri-o/cri-o
-flannel        v0.28.5  https://github.com/flannel-io/flannel
-calico         v3.31.6  https://github.com/projectcalico/calico
-cilium         v1.19.5  https://github.com/cilium/cilium
-cfssl          v1.6.5   https://github.com/cloudflare/cfssl
-metrics-server v0.8.1   https://github.com/kubernetes-sigs/metrics-server
+kubernetes     v1.34.13 https://github.com/kubernetes/kubernetes
+etcd           v3.6.5   https://github.com/etcd-io/etcd
+cni-plugins    v1.7.1   https://github.com/containernetworking/plugins
+coredns        v1.12.1  https://github.com/kubernetes/kubernetes/tree/v1.33.13/cluster/addons/dns/coredns
+runc           v1.5.2   https://github.com/opencontainers/runc
+containerd     v1.7.36  https://github.com/containerd/containerd
+crictl         v1.37.0  https://github.com/kubernetes-sigs/cri-tools
+docker         v29.9.2  https://github.com/moby/moby
+cri-dockerd    v0.4.9   https://github.com/Mirantis/cri-dockerd
+crio           v1.37.2  https://github.com/cri-o/cri-o
+flannel        v0.28.10 https://github.com/flannel-io/flannel
+calico         v3.31.7  https://github.com/projectcalico/calico
+cilium         v1.20.4  https://github.com/cilium/cilium
+cfssl          v1.7.1   https://github.com/cloudflare/cfssl
+metrics-server v0.9.1   https://github.com/kubernetes-sigs/metrics-server
 dashboard      v7.14.0  https://github.com/kubernetes/dashboard
 
 

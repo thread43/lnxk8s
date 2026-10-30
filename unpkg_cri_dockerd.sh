@@ -15,7 +15,7 @@ mkdir -p artifact/cri-dockerd
 cd pkg
 
 [ -d cri-dockerd ] && rm -rf cri-dockerd
-tar xzf cri-dockerd-0.4.3.amd64.tgz
+tar xzf cri-dockerd-0.4.9.amd64.tgz
 
 chown -R root:root cri-dockerd
 

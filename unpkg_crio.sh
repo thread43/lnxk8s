@@ -16,7 +16,7 @@ cd pkg
 
 [ -d cri-o ] && rm -rf cri-o
 mkdir -p cri-o
-tar xzf cri-o.amd64.v1.36.1.tar.gz
+tar xzf cri-o.amd64.v1.37.2.tar.gz
 
 chown -R root:root cri-o
 

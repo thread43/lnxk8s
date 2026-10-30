@@ -15,7 +15,7 @@ mkdir -p artifact/docker
 cd pkg
 
 [ -d docker ] && rm -rf docker
-tar xzf docker_x86_64/docker-29.6.0.tgz
+tar xzf docker_x86_64/docker-29.9.2.tgz
 
 chown -R root:root docker
 

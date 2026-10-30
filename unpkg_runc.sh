@@ -14,10 +14,10 @@ mkdir -p artifact/runc
 
 cd pkg
 
-chown -R root:root runc_v1.4.3
+chown -R root:root runc_v1.5.2
 
-chmod +x runc_v1.4.3/runc.amd64
+chmod +x runc_v1.5.2/runc.amd64
 
-cp -a runc_v1.4.3/runc.amd64 ../artifact/runc/runc
+cp -a runc_v1.5.2/runc.amd64 ../artifact/runc/runc
 
 date

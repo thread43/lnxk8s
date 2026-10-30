@@ -16,7 +16,7 @@ cd pkg
 
 [ -d containerd ] && rm -rf containerd
 mkdir -p containerd
-tar xzf containerd-1.7.33-linux-amd64.tar.gz -C containerd
+tar xzf containerd-1.7.36-linux-amd64.tar.gz -C containerd
 
 chown -R root:root containerd
 

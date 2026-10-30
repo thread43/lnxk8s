@@ -17,11 +17,11 @@ mkdir -p pkg
 cd pkg
 
 [ "${NETWORK_REGION}" = "us" ] && {
-wget -c "https://storage.googleapis.com/cri-o/artifacts/cri-o.amd64.v1.36.1.tar.gz" -O cri-o.amd64.v1.36.1.tar.gz
+wget -c "https://storage.googleapis.com/cri-o/artifacts/cri-o.amd64.v1.37.2.tar.gz" -O cri-o.amd64.v1.37.2.tar.gz
 }
 
 [ "${NETWORK_REGION}" = "cn" ] && {
-wget -c "http://199.115.230.237:12345/kubernetes/pkg/cri-o.amd64.v1.36.1.tar.gz" -O cri-o.amd64.v1.36.1.tar.gz
+wget -c "http://199.115.230.237:12345/kubernetes/pkg/cri-o.amd64.v1.37.2.tar.gz" -O cri-o.amd64.v1.37.2.tar.gz
 }
 
 date

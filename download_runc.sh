@@ -17,13 +17,13 @@ mkdir -p pkg
 cd pkg
 
 [ "${NETWORK_REGION}" = "us" ] && {
-mkdir -p runc_v1.4.3
-wget -c "https://github.com/opencontainers/runc/releases/download/v1.4.3/runc.amd64" -O runc_v1.4.3/runc.amd64
+mkdir -p runc_v1.5.2
+wget -c "https://github.com/opencontainers/runc/releases/download/v1.5.2/runc.amd64" -O runc_v1.5.2/runc.amd64
 }
 
 [ "${NETWORK_REGION}" = "cn" ] && {
-mkdir -p runc_v1.4.3
-wget -c "http://199.115.230.237:12345/kubernetes/pkg/runc_v1.4.3/runc.amd64" -O runc_v1.4.3/runc.amd64
+mkdir -p runc_v1.5.2
+wget -c "http://199.115.230.237:12345/kubernetes/pkg/runc_v1.5.2/runc.amd64" -O runc_v1.5.2/runc.amd64
 }
 
 date
