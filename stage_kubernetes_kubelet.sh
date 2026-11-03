@@ -36,6 +36,10 @@ cp -a kubernetes/kubelet/kubelet-config.yml           /opt/kubernetes/kubelet/ku
 cp -a kubernetes/kubelet/kubelet.conf                 /opt/kubernetes/kubelet/kubelet.conf
 cp -a kubernetes/kubelet/kubelet.service              /usr/lib/systemd/system/kubelet.service
 
+if (which apt >/dev/null 2>&1); then
+  sed -i "s|^# resolvConf:|resolvConf:|g" /opt/kubernetes/kubelet/kubelet-config.yml
+fi
+
 systemctl daemon-reload
 systemctl enable kubelet
 systemctl restart kubelet || true
